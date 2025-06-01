@@ -1,0 +1,54 @@
+{
+    "sub_tasks": [
+        {
+            "bullet_points": [
+                "Read the train and test CSV files from the specified file paths.",
+                "Display the first few rows of each DataFrame to confirm successful loading.",
+                "Print the shape and column names of both DataFrames.",
+                "Check for data consistency between train and test sets: compare column names, data types, and value ranges for each feature.",
+                "Save the loaded DataFrames for further analysis."
+            ],
+            "sub_task": "Load the train and test CSV files into pandas DataFrames and check for data consistency.",
+            "sub_task_agent": "engineer"
+        },
+        {
+            "bullet_points": [
+                "Generate summary statistics (mean, std, min, max, etc.) for numeric columns.",
+                "Show value counts for categorical columns.",
+                "Check for missing values and data types.",
+                "Visualize distributions of key features (e.g., age, balance, duration).",
+                "Summarize the target variable distribution.",
+                "Perform correlation analysis between features and the target variable (including both numeric and encoded categorical features).",
+                "Analyze the relationship between campaign-related features (duration, campaign, pdays, previous, poutcome) and the target variable.",
+                "Examine temporal patterns in the data using the month feature to identify any seasonality in customer responses.",
+                "Document any data transformations or cleaning steps performed during EDA."
+            ],
+            "sub_task": "Perform comprehensive Exploratory Data Analysis (EDA) on the train DataFrame.",
+            "sub_task_agent": "engineer"
+        },
+        {
+            "bullet_points": [
+                "Handle categorical variables (e.g., encoding).",
+                "Normalize numeric features as appropriate.",
+                "Address any class imbalance in the target variable (e.g., via resampling or class weights).",
+                "Save the cleaned/processed DataFrames as pickle or CSV files for easy reuse.",
+                "Provide example code snippets for loading these DataFrames in future analyses.",
+                "Document all data transformations performed to ensure reproducibility."
+            ],
+            "sub_task": "Preprocess and save the DataFrames for further use, ensuring reproducibility.",
+            "sub_task_agent": "engineer"
+        },
+        {
+            "bullet_points": [
+                "Explain how to load the saved DataFrames in Python.",
+                "Describe each feature in detail, including its type, possible values, and banking domain context.",
+                "Discuss how each feature might influence term deposit subscriptions, referencing EDA findings (including campaign and temporal effects).",
+                "Provide recommendations on feature selection or feature engineering based on EDA results.",
+                "Discuss best practices for using the DataFrame in further analyses.",
+                "Highlight any important findings or considerations from the EDA."
+            ],
+            "sub_task": "Provide a detailed notice on how to load and use the data from the DataFrame, explaining all features and offering domain-specific guidance.",
+            "sub_task_agent": "researcher"
+        }
+    ]
+}
